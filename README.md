@@ -1,3 +1,3 @@
 # etmb
 
-	> As the name indicates this is a **express** - **typescript** - **mongoose** boilerplate
+>As the name indicates this is a **express** - **typescript** - **mongoose** boilerplate
