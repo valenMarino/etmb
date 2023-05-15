@@ -4,6 +4,7 @@ import mongose from 'mongoose';
 import {config} from './config/config';
 import Logger from './library/logger';
 import TeamRouter from '../src/routes/TeamRoutes';
+import PlayerRouter from '../src/routes/PlayerRoutes';
 mongose
     .connect(config.mongo.url, {retryWrites: true, w: 'majority'})
     .then(() => {
@@ -45,7 +46,7 @@ const RunServer = () => {
 
     //routes
     router.use('/team', TeamRouter);
-
+    router.use('/player', PlayerRouter);
     //healthcheck
     router.get('/ping', (req, res, next) => res.status(200).json({message: 'pong'}));
 
