@@ -13,8 +13,7 @@ const PlayerSchema: Schema = new Schema(
         team: {type: Schema.Types.ObjectId, require: true, ref: 'Team'}
     },
     {
-        timestamps: true,
-        versionKey: true
+        timestamps: true
     }
 );
 
